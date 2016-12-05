@@ -1,0 +1,62 @@
+2016-11-29T07:04:42.190151Z: FATAL [0] init.config: Agent failed to load: Please make sure the configuration file probe.xml or Devices.xml is in the current directory or specify the correct file in the configuration file agent.cfg using Devices = <file>
+2016-11-29T07:05:48.717876Z: FATAL [0] init.config: Agent failed to load: Please make sure the configuration file probe.xml or Devices.xml is in the current directory or specify the correct file in the configuration file agent. using Devices = <file>
+2016-11-29T07:05:51.323348Z: FATAL [0] init.config: Agent failed to load: Please make sure the Devices XML configuration file ../samples/mapa_adapter.xml is in the current path 
+2016-11-29T07:06:07.807951Z: FATAL [0] init.config: Agent failed to load: Please make sure the Devices XML configuration file ../samples/mapa_adapter.xml is in the current path 
+2016-11-29T07:06:33.268278Z: FATAL [0] init.config: Agent failed to load: Please make sure the Devices XML configuration file ../samples/agent.xml is in the current path 
+2016-11-29T07:06:52.976839Z: INFO  [0] init.config: Starting agent on port 5000
+2016-11-29T07:06:52.978557Z: INFO  [0] init.config: Adding adapter for HMI_Log on 127.0.0.1:7878
+2016-11-29T07:06:52.978701Z: DEBUG [0] agent: registerFile: Path ../styles/favicon.ico is not a directory: Unable to find directory ../styles/favicon.ico, trying as a file
+2016-11-29T07:06:52.978999Z: DEBUG [0] init.config: Waiting for monitor thread to exit to restart agent
+2016-11-29T07:06:52.979230Z: DEBUG [1] init.config: Monitoring files: agent.cfg and ./agent.xml, will warm start if they change.
+2016-11-29T07:06:52.979327Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:06:52.979592Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:06:52.979645Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:06:53.979842Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:06:53.980112Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:06:53.980153Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:06:54.980306Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:06:54.980561Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:06:54.980596Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:06:55.980726Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:06:55.981167Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:06:55.981248Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:06:56.981415Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:06:56.981704Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:06:56.981740Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:06:57.981904Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:06:57.982171Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:06:57.982221Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:06:58.982360Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:06:58.982686Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:06:58.982740Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:06:59.982931Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:06:59.983367Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:06:59.983497Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:07:02.884289Z: INFO  [0] init.config: Starting agent on port 5000
+2016-11-29T07:07:02.886002Z: INFO  [0] init.config: Adding adapter for HMI_Log on 127.0.0.1:7878
+2016-11-29T07:07:02.886191Z: DEBUG [0] agent: registerFile: Path ../styles/favicon.ico is not a directory: Unable to find directory ../styles/favicon.ico, trying as a file
+2016-11-29T07:07:02.886621Z: DEBUG [0] init.config: Waiting for monitor thread to exit to restart agent
+2016-11-29T07:07:02.886916Z: DEBUG [1] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:07:02.887028Z: DEBUG [2] init.config: Monitoring files: agent.cfg and ./agent.xml, will warm start if they change.
+2016-11-29T07:07:02.887236Z: WARN  [1] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:07:02.887302Z: INFO  [1] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:07:03.887463Z: DEBUG [1] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:07:03.887857Z: WARN  [1] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:07:03.887932Z: INFO  [1] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:07:43.359457Z: INFO  [0] init.config: Starting agent on port 5000
+2016-11-29T07:07:43.362575Z: INFO  [0] init.config: Adding adapter for HMI_Log on 127.0.0.1:7878
+2016-11-29T07:07:43.362865Z: DEBUG [0] agent: registerFile: Path ../styles/favicon.ico is not a directory: Unable to find directory ../styles/favicon.ico, trying as a file
+2016-11-29T07:07:43.363462Z: DEBUG [0] init.config: Waiting for monitor thread to exit to restart agent
+2016-11-29T07:07:43.363927Z: DEBUG [1] init.config: Monitoring files: ./agent.cfg and ./agent.xml, will warm start if they change.
+2016-11-29T07:07:43.364050Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:07:43.364339Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:07:43.364415Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:07:44.364566Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:07:44.364878Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:07:44.364923Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:07:45.365083Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:07:45.365345Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:07:45.365385Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
+2016-11-29T07:07:46.365519Z: DEBUG [2] input.connector: Connecting to data source: 127.0.0.1 on port: 7878
+2016-11-29T07:07:46.365969Z: WARN  [2] input.connector: connect: Socket exception: unable to connect to '127.0.0.1:7878'
+2016-11-29T07:07:46.366047Z: INFO  [2] input.adapter: Will try to reconnect in 1000 milliseconds
