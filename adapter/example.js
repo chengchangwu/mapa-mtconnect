@@ -3,11 +3,6 @@ var net = require('net');
 var host = "localhost"; //"192.168.1.124";
 var port = 7878;
 
-var now = new Date();
-var isoData = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString(); 
-//get.Time(): Return the number of milliseconds since midnight Jan 1 1970, and a specified date.
-//get.TimezoneOffset : Returns the time difference between UTC time and local time, in minutes.
-
 console.log('Waitting for connection');
 
 var server = net.createServer(function(c) { 
@@ -33,8 +28,8 @@ var server = net.createServer(function(c) {
         rl.prompt();
         
         rl.on('line', function(line) {
-            console.log(isoData + "|" + line + "\n");
-            c.write(isoData + "|" + line + "\n");
+            console.log("|" + line + "\n");
+            c.write("|" + line + "\n");
             rl.prompt();
         }).on('close', function() {
             console.log('Adapter server closed');
