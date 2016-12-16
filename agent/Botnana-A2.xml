@@ -2,110 +2,130 @@
 <MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectDevices:1.1">
   <Header creationTime="2016-11-24T01:50:29+00:00" sender="localhost" instanceId="1237628993" bufferSize="100000" version="1.1"/>
   <Devices>
-    <Device uuid="device-1" name="Botnana-A2" sampleInterval="1.0" id="d1">
+    <Device uuid="device-1" name="Botnana-A2" sampleInterval="1.0" id="d0">
       <DataItems>
         <DataItem type="master" name="avail" id="d0-1" category="EVENT"/>
       </DataItems>
       
       <Components>
-        <JSONRPC name="verson" id="d0-2">
+        <JSON name="JSON" id="j1-0">
             <DataItems>
-                <DataItem type="Version" category="EVENT" id="d0-3" name="code"/>
+                <DataItem type="version" category="EVENT" id="j1-1" name="code"/>
             </DataItems>
-        </JSONRPC>
+        </JSON>
 
-        <Slave name="Slave.1" id="s1-0">
+        <Drive name="DRIVE.1" id="s1">
             <DataItems>
-                <DataItem type="Slave" name="Vendor.1" category="EVENT" id="s1-01"/>
-                <DataItem type="Slave" name="Product.1" category="EVENT" id="s1-02"/>
-                <DataItem type="Slave" name="Control_word.1" category="EVENT" id="s1-03"/>
-                <DataItem type="Slave" name="Status_word.1" category="EVENT" id="s1-04"/>
-                <DataItem type="Slave" name="pds_state.1" category="EVENT" id="s1-05"/>
-                <DataItem type="Slave" name="pds_goal.1" category="EVENT" id="s1-06"/>
-                <DataItem type="Slave" name="poeration_mode.1" category="EVENT" id="s1-07"/>
-                <DataItem type="Slave" name="real_position.1" category="EVENT" id="s1-08"/>
-                <DataItem type="Slave" name="target_position.1" category="EVENT" id="s1-09"/>
-                <DataItem type="Slave" name="homing_speed.1" category="EVENT" id="s1-10"/>
-                <DataItem type="Slave" name="homing_method.1" category="EVENT" id="s1-11"/>
-                <DataItem type="Slave" name="homing_speed_1.1" category="EVENT" id="s1-12"/>
-                <DataItem type="Slave" name="homing_speed_2.1" category="EVENT" id="s1-13"/>
-                <DataItem type="Slave" name="homing_acceleration.1" category="EVENT" id="s1-14"/>
-                <DataItem type="Slave" name="profile_velocity.1" category="EVENT" id="s1-15"/>
-                <DataItem type="Slave" name="profile_acceleration.1" category="EVENT" id="s1-16"/>
-                <DataItem type="Slave" name="profile_deceleration.1" category="EVENT" id="s1-17"/>            
+                <DataItem type="DRIVE" name="vendor.1" category="EVENT" id="d1-01"/>
+                <DataItem type="DRIVE" name="product.1" category="EVENT" id="d1-02"/>
+                <DataItem type="DRIVE" name="control_word.1" category="EVENT" id="d1-03"/>
+                <DataItem type="DRIVE" name="status_word.1" category="EVENT" id="d1-04"/>
+                <DataItem type="DRIVE" name="pds_state.1" category="EVENT" id="d1-05"/>
+                <DataItem type="DRIVE" name="pds_goal.1" category="EVENT" id="d1-06"/>
+                <DataItem type="DRIVE" name="poeration_mode.1" category="EVENT" id="d1-07"/>
+                <DataItem type="DRIVE" name="real_position.1" category="EVENT" id="d1-08"/>
+                <DataItem type="DRIVE" name="target_position.1" category="EVENT" id="d1-09"/>
+                <DataItem type="DRIVE" name="homing_speed.1" category="EVENT" id="d1-10"/>
+                <DataItem type="DRIVE" name="homing_method.1" category="EVENT" id="d1-11"/>
+                <DataItem type="DRIVE" name="homing_speed_1.1" category="EVENT" id="d1-12"/>
+                <DataItem type="DRIVE" name="homing_speed_2.1" category="EVENT" id="d1-13"/>
+                <DataItem type="DRIVE" name="homing_acceleration.1" category="EVENT" id="d1-14"/>
+                <DataItem type="DRIVE" name="profile_velocity.1" category="EVENT" id="d1-15"/>
+                <DataItem type="DRIVE" name="profile_acceleration.1" category="EVENT" id="d1-16"/>
+                <DataItem type="DRIVE" name="profile_deceleration.1" category="EVENT" id="d1-17"/>            
           </DataItems>
-        </Slave>
+        </Drive>
 
-        <Dout name="Dout.3" id="dout3-0">
+        <Digital name="DOUT.3" id="s3">
             <DataItems>
-                <DataItem type="Dout" category="EVENT" id="do3-01" name="Vendor.3"/>
-                <DataItem type="Dout" category="EVENT" id="do3-02" name="Product.3"/>
-                <DataItem type="Dout" category="EVENT" id="do3-03" name="dout.3.1"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-04" name="dout.3.2"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-05" name="dout.3.3"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-06" name="dout.3.4"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-07" name="dout.3.5"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-08" name="dout.3.6"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-09" name="dout.3.7"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-10" name="dout.3.8"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-11" name="dout.3.9"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-12" name="dout.3.10"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-13" name="dout.3.11"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-14" name="dout.3.12"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-15" name="dout.3.13"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-16" name="dout.3.14"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-17" name="dout.3.15"/>           
-                <DataItem type="Dout" category="EVENT" id="do3-18" name="dout.3.16"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-01" name="vendor.3"/>
+                <DataItem type="DOUT" category="EVENT" id="do3-02" name="product.3"/>
+                <DataItem type="DOUT" category="EVENT" id="do3-03" name="dout.3.1"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-04" name="dout.3.2"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-05" name="dout.3.3"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-06" name="dout.3.4"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-07" name="dout.3.5"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-08" name="dout.3.6"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-09" name="dout.3.7"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-10" name="dout.3.8"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-11" name="dout.3.9"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-12" name="dout.3.10"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-13" name="dout.3.11"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-14" name="dout.3.12"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-15" name="dout.3.13"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-16" name="dout.3.14"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-17" name="dout.3.15"/>           
+                <DataItem type="DOUT" category="EVENT" id="do3-18" name="dout.3.16"/>           
           </DataItems>
-        </Dout>
+        </Digital>
+
+        <Analog name="AIN.4" id="s4">
+            <DataItems>
+                <DataItem type="AIN" category="EVENT" id="ai4-01" name="vendor.4" />
+                <DataItem type="AIN" category="EVENT" id="ai4-02" name="product.4" />
+                <DataItem type="AIN" category="EVENT" id="ai4-03" name="ain.4.1" />           
+                <DataItem type="AIN" category="EVENT" id="ai4-04" name="ain.4.2" />           
+                <DataItem type="AIN" category="EVENT" id="ai4-05" name="ain.4.3" />           
+                <DataItem type="AIN" category="EVENT" id="ai4-06" name="ain.4.4" />           
+          </DataItems>
+        </Analog>
+
+        <Analog name="AOUT.5" id="s5">
+            <DataItems>
+                <DataItem type="AOUT" category="EVENT" id="ao5-01" name="vendor.5"/>
+                <DataItem type="AOUT" category="EVENT" id="ao5-02" name="product.5"/>
+                <DataItem type="AOUT" category="EVENT" id="ao5-03" name="aout.5.1"/>           
+                <DataItem type="AOUT" category="EVENT" id="ao5-04" name="aout.5.2"/>           
+                <DataItem type="AOUT" category="EVENT" id="ao5-05" name="aout.5.3"/>           
+                <DataItem type="AOUT" category="EVENT" id="ao5-06" name="aout.5.4"/>           
+          </DataItems>
+        </Analog>
+       
+        <Drive name="DRIVE.6" id="s6">
+            <DataItems>
+                <DataItem type="DRIVE" name="vendor.2" category="EVENT" id="d2-01"/>
+                <DataItem type="DRIVE" name="product.2" category="EVENT" id="d2-02"/>
+                <DataItem type="DRIVE" name="control_word.2" category="EVENT" id="d2-03"/>
+                <DataItem type="DRIVE" name="status_word.2" category="EVENT" id="d2-04"/>
+                <DataItem type="DRIVE" name="pds_state.2" category="EVENT" id="d2-05"/>
+                <DataItem type="DRIVE" name="pds_goal.2" category="EVENT" id="d2-06"/>
+                <DataItem type="DRIVE" name="poeration_mode.2" category="EVENT" id="d2-07"/>
+                <DataItem type="DRIVE" name="real_position.2" category="EVENT" id="d2-08"/>
+                <DataItem type="DRIVE" name="target_position.2" category="EVENT" id="d2-09"/>
+                <DataItem type="DRIVE" name="homing_speed.2" category="EVENT" id="d2-10"/>
+                <DataItem type="DRIVE" name="homing_method.2" category="EVENT" id="d2-11"/>
+                <DataItem type="DRIVE" name="homing_speed_1.2" category="EVENT" id="d2-12"/>
+                <DataItem type="DRIVE" name="homing_speed_2.2" category="EVENT" id="d2-13"/>
+                <DataItem type="DRIVE" name="homing_acceleration.2" category="EVENT" id="d2-14"/>
+                <DataItem type="DRIVE" name="profile_velocity.2" category="EVENT" id="d2-15"/>
+                <DataItem type="DRIVE" name="profile_acceleration.2" category="EVENT" id="d2-16"/>
+                <DataItem type="DRIVE" name="profile_deceleration.2" category="EVENT" id="d2-17"/>            
+          </DataItems>
+        </Drive>
  
-        <Din name="Din.7" id="din7-0">
+        <Digital name="DIN.7" id="s7">
             <DataItems>
-                <DataItem type="Din" category="EVENT" id="di7-01" name="Vendor.7"/>
-                <DataItem type="Din" category="EVENT" id="di7-02" name="Product.7"/>
-                <DataItem type="Din" category="EVENT" id="di7-03" name="din.7.1"/>           
-                <DataItem type="Din" category="EVENT" id="di7-04" name="din.7.2"/>           
-                <DataItem type="Din" category="EVENT" id="di7-05" name="din.7.3"/>           
-                <DataItem type="Din" category="EVENT" id="di7-06" name="din.7.4"/>           
-                <DataItem type="Din" category="EVENT" id="di7-07" name="din.7.5"/>           
-                <DataItem type="Din" category="EVENT" id="di7-08" name="din.7.6"/>           
-                <DataItem type="Din" category="EVENT" id="di7-09" name="din.7.7"/>           
-                <DataItem type="Din" category="EVENT" id="di7-10" name="din.7.8"/>           
-                <DataItem type="Din" category="EVENT" id="di7-11" name="din.7.9"/>           
-                <DataItem type="Din" category="EVENT" id="di7-12" name="din.7.10"/>           
-                <DataItem type="Din" category="EVENT" id="di7-13" name="din.7.11"/>           
-                <DataItem type="Din" category="EVENT" id="di7-14" name="din.7.12"/>           
-                <DataItem type="Din" category="EVENT" id="di7-15" name="din.7.13"/>           
-                <DataItem type="Din" category="EVENT" id="di7-16" name="din.7.14"/>           
-                <DataItem type="Din" category="EVENT" id="di7-17" name="din.7.15"/>           
-                <DataItem type="Din" category="EVENT" id="di7-18" name="din.7.16"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-01" name="vendor.7"/>
+                <DataItem type="DIN" category="EVENT" id="di7-02" name="product.7"/>
+                <DataItem type="DIN" category="EVENT" id="di7-03" name="din.7.1"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-04" name="din.7.2"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-05" name="din.7.3"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-06" name="din.7.4"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-07" name="din.7.5"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-08" name="din.7.6"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-09" name="din.7.7"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-10" name="din.7.8"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-11" name="din.7.9"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-12" name="din.7.10"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-13" name="din.7.11"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-14" name="din.7.12"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-15" name="din.7.13"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-16" name="din.7.14"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-17" name="din.7.15"/>           
+                <DataItem type="DIN" category="EVENT" id="di7-18" name="din.7.16"/>           
           </DataItems>
-        </Din>  
+        </Digital>  
  
-        <Aout name="Aout.5" id="aout5-0">
-            <DataItems>
-                <DataItem type="Aout" category="EVENT" id="ao5-01" name="Vendor.5"/>
-                <DataItem type="Aout" category="EVENT" id="ao5-02" name="Product.5"/>
-                <DataItem type="Aout" category="EVENT" id="ao5-03" name="aout.5.1"/>           
-                <DataItem type="Aout" category="EVENT" id="ao5-04" name="aout.5.2"/>           
-                <DataItem type="Aout" category="EVENT" id="ao5-05" name="aout.5.3"/>           
-                <DataItem type="Aout" category="EVENT" id="ao5-06" name="aout.5.4"/>           
-          </DataItems>
-        </Aout>
- 
-        <Ain name="Ain.4" id="ain4-0">
-            <DataItems>
-                <DataItem type="Ain" category="EVENT" id="ai4-01" name="Vendor.4" />
-                <DataItem type="Ain" category="EVENT" id="ai4-02" name="Product.4" />
-                <DataItem type="Ain" category="EVENT" id="ai4-03" name="ain.4.1" />           
-                <DataItem type="Ain" category="EVENT" id="ai4-04" name="ain.4.2" />           
-                <DataItem type="Ain" category="EVENT" id="ai4-05" name="ain.4.3" />           
-                <DataItem type="Ain" category="EVENT" id="ai4-06" name="ain.4.4" />           
-          </DataItems>
-        </Ain>
-
-
-
       </Components>
     </Device>
 
