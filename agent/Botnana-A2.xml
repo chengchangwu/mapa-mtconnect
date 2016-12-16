@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectDevices:1.1">
+  <Header creationTime="2016-11-24T01:50:29+00:00" sender="localhost" instanceId="1237628993" bufferSize="100000" version="1.1"/>
+  <Devices>
+    <Device uuid="device-1" name="Botnana-A2" sampleInterval="1.0" id="d1">
+      <DataItems>
+        <DataItem type="master" name="avail" id="d0-1" category="EVENT"/>
+      </DataItems>
+      
+      <Components>
+        <JSON name="verson" id="d0-2">
+            <DataItems>
+                <DataItem type="Version" category="EVENT" id="d0-3" name="code"/>
+            </DataItems>
+        </JSON>
+
+        <Slave name="Slave.1" id="s1-0">
+            <DataItems>
+                <DataItem type="Slave" name="Vendor.1" category="EVENT" id="s1-1"/>
+                <DataItem type="Slave" name="Product.1" category="EVENT" id="s1-2"/>
+                <DataItem type="Slave" name="Control_word.1" category="EVENT" id="s1-3"/>
+                <DataItem type="Slave" name="Status_word.1" category="EVENT" id="s1-4"/>
+                <DataItem type="Slave" name="pds_state.1" category="EVENT" id="s1-5"/>
+                <DataItem type="Slave" name="pds_goal.1" category="EVENT" id="s1-6"/>
+                <DataItem type="Slave" name="poeration_mode.1" category="EVENT" id="s1-7"/>
+                <DataItem type="Slave" name="real_position.1" category="EVENT" id="s1-8"/>
+                <DataItem type="Slave" name="target_position.1" category="EVENT" id="s1-9"/>
+                <DataItem type="Slave" name="homing_speed.1" category="EVENT" id="s1-10"/>
+                <DataItem type="Slave" name="homing_method.1" category="EVENT" id="s1-11"/>
+                <DataItem type="Slave" name="homing_speed_1.1" category="EVENT" id="s1-12"/>
+                <DataItem type="Slave" name="homing_speed_2.1" category="EVENT" id="s1-13"/>
+                <DataItem type="Slave" name="homing_acceleration.1" category="EVENT" id="s1-14"/>
+                <DataItem type="Slave" name="profile_velocity.1" category="EVENT" id="s1-15"/>
+                <DataItem type="Slave" name="profile_acceleration.1" category="EVENT" id="s1-16"/>
+                <DataItem type="Slave" name="profile_deceleration.1" category="EVENT" id="s1-17"/>            
+          </DataItems>
+        </Slave>
+
+        <Dout name="Dout.3" id="dout3-0">
+            <DataItems>
+                <DataItem type="Dout" category="EVENT" id="dout3-1" name="Vendor.3"/>
+                <DataItem type="Dout" category="EVENT" id="dout3-2" name="Product.3"/>
+                <DataItem type="Dout" category="EVENT" id="dout3-3" name="dout.3.1"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-4" name="dout.3.2"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-5" name="dout.3.3"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-6" name="dout.3.4"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-7" name="dout.3.5"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-8" name="dout.3.6"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-9" name="dout.3.7"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-10" name="dout.3.8"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-11" name="dout.3.9"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-12" name="dout.3.10"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-13" name="dout.3.11"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-14" name="dout.3.12"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-15" name="dout.3.13"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-16" name="dout.3.14"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-17" name="dout.3.15"/>           
+                <DataItem type="Dout" category="EVENT" id="dout3-18" name="dout.3.16"/>           
+          </DataItems>
+        </Dout>
+ 
+        <Din name="Din.7" id="din7-0">
+            <DataItems>
+                <DataItem type="Din" category="EVENT" id="din7-1" name="Vendor.7"/>
+                <DataItem type="Din" category="EVENT" id="din7-2" name="Product.7"/>
+                <DataItem type="Din" category="EVENT" id="din7-3" name="din.7.1"/>           
+                <DataItem type="Din" category="EVENT" id="din7-4" name="din.7.2"/>           
+                <DataItem type="Din" category="EVENT" id="din7-5" name="din.7.3"/>           
+                <DataItem type="Din" category="EVENT" id="din7-6" name="din.7.4"/>           
+                <DataItem type="Din" category="EVENT" id="din7-7" name="din.7.5"/>           
+                <DataItem type="Din" category="EVENT" id="din7-8" name="din.7.6"/>           
+                <DataItem type="Din" category="EVENT" id="din7-9" name="din.7.7"/>           
+                <DataItem type="Din" category="EVENT" id="din7-10" name="din.7.8"/>           
+                <DataItem type="Din" category="EVENT" id="din7-11" name="din.7.9"/>           
+                <DataItem type="Din" category="EVENT" id="din7-12" name="din.7.10"/>           
+                <DataItem type="Din" category="EVENT" id="din7-13" name="din.7.11"/>           
+                <DataItem type="Din" category="EVENT" id="din7-14" name="din.7.12"/>           
+                <DataItem type="Din" category="EVENT" id="din7-15" name="din.7.13"/>           
+                <DataItem type="Din" category="EVENT" id="din7-16" name="din.7.14"/>           
+                <DataItem type="Din" category="EVENT" id="din7-17" name="din.7.15"/>           
+                <DataItem type="Din" category="EVENT" id="din7-18" name="din.7.16"/>           
+          </DataItems>
+        </Din>  
+ 
+        <Aout name="Aout.5" id="aout5-0">
+            <DataItems>
+                <DataItem type="Aout" category="EVENT" id="aout5-1" name="Vendor.5"/>
+                <DataItem type="Aout" category="EVENT" id="aout5-2" name="Product.5"/>
+                <DataItem type="Aout" category="EVENT" id="aout5-3" name="aout.5.1"/>           
+                <DataItem type="Aout" category="EVENT" id="aout5-4" name="aout.5.2"/>           
+                <DataItem type="Aout" category="EVENT" id="aout5-5" name="aout.5.3"/>           
+                <DataItem type="Aout" category="EVENT" id="aout5-6" name="aout.5.4"/>           
+          </DataItems>
+        </Aout>
+ 
+        <Ain name="Ain.4" id="ain4-0">
+            <DataItems>
+                <DataItem type="Ain" category="EVENT" id="ain4-1" name="Vendor.4" />
+                <DataItem type="Ain" category="EVENT" id="ain4-2" name="Product.4" />
+                <DataItem type="Ain" category="EVENT" id="ain4-3" name="ain.4.1" />           
+                <DataItem type="Ain" category="EVENT" id="ain4-4" name="ain.4.2" />           
+                <DataItem type="Ain" category="EVENT" id="ain4-5" name="ain.4.3" />           
+                <DataItem type="Ain" category="EVENT" id="ain4-6" name="ain.4.4" />           
+          </DataItems>
+        </Ain>
+
+
+
+      </Components>
+    </Device>
+
+  </Devices>
+</MTConnectDevices>
+
