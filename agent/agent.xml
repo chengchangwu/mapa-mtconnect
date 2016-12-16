@@ -4,15 +4,15 @@
   <Devices>
     <Device uuid="device-1" name="HMI_Log" sampleInterval="1.0" id="d1">
       <DataItems>
-        <DataItem type="AVAILABILITY" name="avail" id="d1-1" category="EVENT"/>
+        <DataItem type="LOG" name="avail" id="d1-1" category="EVENT"/>
       </DataItems>
       <Components>
         <Log name="log" id="d1-2">
             <DataItems>
-                <DataItem type="Him_Log" category="EVENT" id="d1-3" name="code"/>
-                <DataItem type="Him_Log" category="EVENT" id="d1-4" name="cat"/>
-                <DataItem type="Him_Log" category="EVENT" id="d1-5" name="src"/>
-                <DataItem type="Him_Log" category="EVENT" id="d1-6" name="msg"/>
+                <DataItem type="Hmi_Log" category="EVENT" id="d1-3" name="code"/>
+                <DataItem type="Hmi_Log" category="EVENT" id="d1-4" name="cat"/>
+                <DataItem type="Hmi_Log" category="EVENT" id="d1-5" name="src"/>
+                <DataItem type="Hmi_Log" category="EVENT" id="d1-6" name="msg"/>
           </DataItems>
         </Log>
       </Components>
@@ -20,7 +20,7 @@
     
     <Device uuid="device-2" name="Schneider_E-Meter" sampleInterval="1.0" id="d2">
       <DataItems>
-        <DataItem type="AVAILABILITY" name="avail" id="d2-1" category="EVENT"/>
+        <DataItem type="LOG" name="avail" id="d2-1" category="EVENT"/>
       </DataItems>
       <Components>
         <E-Meter name="E-Meter" id="d2-2">
