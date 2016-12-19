@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectDevices:1.1">
+  <Header creationTime="2016-11-24T01:50:29+00:00" sender="localhost" instanceId="1237628993" bufferSize="100000" version="1.1"/>
+  <Devices>
+    <Device uuid="device-1" name="HMI_Log" sampleInterval="1.0" id="d1">
+      <DataItems>
+        <DataItem type="LOG" name="avail" id="d1-1" category="EVENT"/>
+      </DataItems>
+      <Components>
+        <Log name="log" id="d1-2">
+            <DataItems>
+                <DataItem type="Hmi_Log" category="EVENT" id="d1-3" name="code"/>
+                <DataItem type="Hmi_Log" category="EVENT" id="d1-4" name="cat"/>
+                <DataItem type="Hmi_Log" category="EVENT" id="d1-5" name="src"/>
+                <DataItem type="Hmi_Log" category="EVENT" id="d1-6" name="msg"/>
+          </DataItems>
+        </Log>
+      </Components>
+    </Device>
+    
+    <Device uuid="device-2" name="Schneider_E-Meter" sampleInterval="1.0" id="d2">
+      <DataItems>
+        <DataItem type="LOG" name="avail" id="d2-1" category="EVENT"/>
+      </DataItems>
+      <Components>
+        <E-Meter name="E-Meter" id="d2-2">
+            <DataItems>
+                <DataItem type="E-Meter" category="EVENT" id="d2-3" name="code"/>
+                <DataItem type="E-Meter" category="EVENT" id="d2-5" name="cat"/>
+                <DataItem type="E-Meter" category="EVENT" id="d2-6" name="src"/>
+                <DataItem type="E-Meter" category="EVENT" id="d2-7" name="msg"/>
+          </DataItems>
+        </E-Meter>
+      </Components>
+    </Device>
+  </Devices>
+</MTConnectDevices>
