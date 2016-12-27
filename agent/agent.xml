@@ -2,44 +2,38 @@
 <MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectDevices:1.1">
   <Header creationTime="2016-11-24T01:50:29+00:00" sender="localhost" instanceId="1237628993" bufferSize="100000" version="1.1"/>
   <Devices>
-    <Device uuid="device-1" name="HMI_Log" sampleInterval="1.0" id="d1">
-      <DataItems>
-        <DataItem type="LOG" name="avail" id="d1-1" category="EVENT"/>
-      </DataItems>
+    <Device uuid="device-1" name="HMI-Log" sampleInterval="1.0" id="d1">
       <Components>
-        <Log name="HMI-LOG" id="l0">
+        <Log name="Log" id="l0">
             <DataItems>
-                <DataItem type="HMI_Log" category="EVENT" id="l1" name="log"/>
+                <DataItem type="Log" category="EVENT" id="l1" name="hmilog"/>
           </DataItems>
         </Log>
       </Components>
     </Device>
     
-    <Device uuid="device-2" name="Schneider_Sensors" sampleInterval="1.0" id="d2">
-      <DataItems>
-        <DataItem type="LOG" name="avail" id="d2-1" category="EVENT"/>
-      </DataItems>
+    <Device uuid="device-2" name="Schneider-Sensors" sampleInterval="1.0" id="d2">
       <Components>
         <Sensors name="Electricity-Meter" id="s1">
             <DataItems>
-                <DataItem type="Electricity_Meter" category="EVENT" id="s1-1" name="Vavg.1"/>
-                <DataItem type="Electricity_Meter" category="EVENT" id="s1-2" name="Iavg.1"/>
+                <DataItem type="ElectricityMeter" category="EVENT" id="s1-1" name="Vavg.1"/>
+                <DataItem type="ElectricityMeter" category="EVENT" id="s1-2" name="Iavg.1"/>
           </DataItems>
         </Sensors>
 
         <Sensors name="Temperature-Sensor.1" id="s2">
             <DataItems>
-                <DataItem type="Temperature_Sensor" category="EVENT" id="s2-1" name="temp.1"/>
-                <DataItem type="Temperature_Sensor" category="EVENT" id="s2-2" name="connect.1"/>
-                <DataItem type="Temperature_Sensor" category="EVENT" id="s2-3" name="wran.1"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="s2-1" name="temp.1"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="s2-2" name="connect.1"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="s2-3" name="wran.1"/>
           </DataItems>
         </Sensors>
        
         <Sensors name="Temperature-Sensor.2" id="s3">
             <DataItems>
-                <DataItem type="Temperature_Sensor" category="EVENT" id="s3-1" name="temp.2"/>
-                <DataItem type="Temperature_Sensor" category="EVENT" id="s3-2" name="connect.2"/>
-                <DataItem type="Temperature_Sensor" category="EVENT" id="s3-3" name="wran.2"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="s3-1" name="temp.2"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="s3-2" name="connect.2"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="s3-3" name="wran.2"/>
           </DataItems>
         </Sensors>
  
