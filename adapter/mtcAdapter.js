@@ -5,19 +5,11 @@ var set_time_host = 'localhost'; //'192.168.1.115';
 var set_time_port = 7800;
 var client = new net.Socket();
 
-// 目前設定時間的方式可能會有跨日設定問題，可以將設定的方式合併：date --set 。
 function set_time (date, time){
     var exec = require('child_process').exec;
-    
-    exec('date -s' + date, function(error, stdout){
+    exec("date --set '" + date + " " + time + "'", function(error, stdout){
         if(error) {
             console.log('error');
-        }
-        console.log('stdout: ', stdout);
-    });
-    exec('date -s' + time, function(error, stdout){
-        if(error) {
-            console.log('error: ', error);
         }
         console.log('stdout: ', stdout);
     });
