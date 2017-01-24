@@ -1,11 +1,27 @@
 var net = require('net');
-var mtc_host = '192.168.7.2'; //'localhost'; //
+var mtc_host = 'localhost'; //'192.168.7.2'; //
 var mtc_port = 7879;
-var set_time_host = '192.168.7.3'; //'localhost'; //
+var set_time_host = 'localhost'; //'192.168.7.3'; //
 var set_time_port = 7877;
 var client = new net.Socket();
 
-function set_time (date, time){
+var ModbusRTU = require("modbus-serial");
+var slave = new ModbusRTU();
+
+var fetchSlave = function(id, value , length){
+    slave.connectRTUBuffered("/dev/ttyO0", {baudrate: 19200,  parity:"even"});
+    slave.setID(i);
+    slave.readHoldingRegisters(value, length, function(err, data){
+        if (err){
+            console.log("slave err: " + err);
+        }else {
+            console.log("slave: " + id + ", data: " + data);
+            return data;
+        }
+    });
+}
+
+function setTime (date, time){
     var exec = require('child_process').exec;
     exec("date --set '" + date + " " + time + "'", function(error, stdout){
         if(error) {
@@ -15,7 +31,7 @@ function set_time (date, time){
     });
 }
 
-var try_setting_time = function() {
+var trySettingTime = function() {
     client = new net.Socket();
     var timer;
 
@@ -26,7 +42,7 @@ var try_setting_time = function() {
         var content = JSON.parse(data.toString());
         var date = content.date;
         var time = content.time;
-        set_time(date, time);
+        setTime(date, time);
         
         console.log('Set Botnana-A2 time: ' + content.date + " "+ content.time);
     });
@@ -34,7 +50,7 @@ var try_setting_time = function() {
         console.log("Setting time err: unable to connect to HMI");
         timer = setTimeout(function(){
             console.log("Will try to reconnect HMI in 1000 milliseconds");
-            try_setting_time();
+            trySettingTime();
         }, 1000);
     });
     client.on('close', function(data) {
@@ -42,31 +58,56 @@ var try_setting_time = function() {
             console.log('HMI Server closed');
             timer = setTimeout(function(){
                 console.log("Will try to reconnect HMI in 1000 milliseconds");
-                try_setting_time();
+                trySettingTime();
             }, 1000);
         }
     });
 }
 
-try_setting_time(); // Set Botnana-A2 on time 
+console.log("Botnana-A2 Adapter startup");
+trySettingTime(); // Set Botnana-A2 on time 
 
-
-var Botnana_A2_adapter = net.createServer(function(c) { 
+var BotnanaA2Adapter = net.createServer(function(c) { 
     console.log('Botnana-A2 agent connect');
 
-    c.on('data',function(data) {
-        console.log('send log');
+/*  
+// test
+    var i = 0;
+    setInterval(function(){
+        c.write("|Temp.1|" + (27 + i) + "C\n");
+        c.write("|V-Avg.1|" + (110 + i ) "V\n");
+        i++;
+    },3000);
 
-        c.write("|name|value \n");
-    });
+*/
+    setInterval(function(){
+        var content;
+        var id = i
+        for ( i = 1; i <= 7; i++){
+            if ( i <= 5 ){
+                var value = 0x1000;
+                var length = 1;
+                content = fetchSlave(id, value, length);
+                console.log("|Temp." + i + "|" + content.data[0]/10 + "C\n");
+                //c.write("|temp." + i + "|" + content.data[0] + "\n");
+            } else if ( 6 < i <= 7){
+                var value = 3019;
+                var length = 1;
+                content = fetchSlave(id, value, length);
+                content = content.buffer.readFloatBE().toFixed(2);
+                console.log("|V-Avg"+ (i-5) + "|" + content + "V\n");
+                //c.write("|voalt|" + content + "\n");
+            }
+        }
+    },3000);
 
     c.on('error', function(error){
-        console.log(error);
+        console.log("Botnana-A2 error" + error);
     });
     c.on('close', function(){
         console.log("MTC agent closed");
     });
 });
-Botnana_A2_adapter.listen(mtc_port, mtc_host);
+BotnanaA2Adapter.listen(mtc_port, mtc_host);
 
 
