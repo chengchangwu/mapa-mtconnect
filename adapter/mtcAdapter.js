@@ -1,8 +1,8 @@
 var net = require('net');
-var mtc_host =  'localhost'; //'192.168.7.2';
+var mtc_host = '192.168.7.2'; //'localhost'; //
 var mtc_port = 7879;
-var set_time_host = 'localhost'; //'192.168.1.115';
-var set_time_port = 7800;
+var set_time_host = '192.168.7.3'; //'localhost'; //
+var set_time_port = 7877;
 var client = new net.Socket();
 
 function set_time (date, time){
@@ -17,21 +17,18 @@ function set_time (date, time){
 
 var try_setting_time = function() {
     client = new net.Socket();
+    var timer;
+
     client.connect(set_time_port, set_time_host, function(){
         clearTimeout(timer);
     });
     client.on('data',function(data) {
-        var max_bytes = 36; //{"date":"2016-12-26","time":"13:52"}
-
         var content = JSON.parse(data.toString());
-        if (data.length === max_bytes){
-            var date = content.date;
-            var time = content.time;
-            
-            set_time(date, time);
-        }
-        console.log('Set Botnana-A2 time: ' + content.date + " "+ content.time);
+        var date = content.date;
+        var time = content.time;
+        set_time(date, time);
         
+        console.log('Set Botnana-A2 time: ' + content.date + " "+ content.time);
     });
     client.on('error', function(err) {
         console.log("Setting time err: unable to connect to HMI");
