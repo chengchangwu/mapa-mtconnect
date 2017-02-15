@@ -1,0 +1,38 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          mtc-init
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: MTConncet initscript
+# Description:       This file should be used to construct scripts to be
+#                    placed in /etc/init.d.
+### END INIT INFO
+
+
+#workDir=/home/debian/
+bash /home/debian/mapa-mtconnect/scripts/mtc-init.bash
+
+# Some things that run always
+touch /var/lock/mtc-init
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+    echo "Starting script mtc-init "
+    echo "Could do more here"
+    ;;
+  stop)
+    echo "Stopping script mtc-init"
+    echo "Could do more here"
+    ;;
+  *)
+    echo "Usage: /etc/init.d/mtc-init {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+
+
