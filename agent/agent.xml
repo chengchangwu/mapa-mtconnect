@@ -14,29 +14,28 @@
     
     <Device uuid="device-2" name="Schneider-Sensors" sampleInterval="1.0" id="d2">
       <Components>
-        <Sensors name="Electricity-Meter" id="s1">
+        <Sensors name="Electricity-Meter" id="e1">
             <DataItems>
-                <DataItem type="ElectricityMeter" category="EVENT" id="s1-1" name="Vavg.1"/>
-                <DataItem type="ElectricityMeter" category="EVENT" id="s1-2" name="Iavg.1"/>
+                <DataItem type="ElectricityMeter" category="EVENT" id="e1-1" name="voltage"/>
+                <DataItem type="ElectricityMeter" category="EVENT" id="e1-2" name="current"/>
+                <DataItem type="ElectricityMeter" category="EVENT" id="e1-3" name="power"/>
           </DataItems>
         </Sensors>
 
-        <Sensors name="Temperature-Sensor.1" id="s2">
+        <Sensors name="Temperature-Sensor" id="t1">
             <DataItems>
-                <DataItem type="TemperatureSensor" category="EVENT" id="s2-1" name="temp.1"/>
-                <DataItem type="TemperatureSensor" category="EVENT" id="s2-2" name="connect.1"/>
-                <DataItem type="TemperatureSensor" category="EVENT" id="s2-3" name="wran.1"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="t1-1" name="resistance.1"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="t1-2" name="electronic.1"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="t1-3" name="room.1"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="t1-4" name="lidqui.1"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="t2-1" name="resistance.2"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="t2-2" name="electronic.2"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="t2-3" name="room.2"/>
+                <DataItem type="TemperatureSensor" category="EVENT" id="t2-4" name="lidqui.2"/>
+
           </DataItems>
         </Sensors>
        
-        <Sensors name="Temperature-Sensor.2" id="s3">
-            <DataItems>
-                <DataItem type="TemperatureSensor" category="EVENT" id="s3-1" name="temp.2"/>
-                <DataItem type="TemperatureSensor" category="EVENT" id="s3-2" name="connect.2"/>
-                <DataItem type="TemperatureSensor" category="EVENT" id="s3-3" name="wran.2"/>
-          </DataItems>
-        </Sensors>
- 
       </Components>
     </Device>
   </Devices>
