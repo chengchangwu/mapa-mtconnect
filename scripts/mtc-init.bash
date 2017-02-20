@@ -2,7 +2,9 @@
 # MTCconnect script.
 
 # Startup MTConnect Agent.
-agent debug /home/debian/mapa-mtconnect/agent/agent.cfg
+cd /home/debian/mapa-mtconnect/agent
+agent debug agent.cfg &
 
 # Startup Botnana-A2 Adapter.
-node /home/debian/mapa-mtconnect/adapter/mtcAdapter.js
+cd /home/debian/mapa-mtconnect/adapter/
+node mtcAdapter.js &
