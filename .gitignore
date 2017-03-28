@@ -2,3 +2,4 @@
 #
 agent/agent.log
 adapter/node_modules
+scripts/node_modules
