@@ -1,0 +1,17 @@
+{
+  "name": "mtc_adapter",
+  "version": "1.0.0",
+  "description": "MTConnect Adapter",
+  "dependencies": {
+    "concat-stream": "^1.6.0",
+    "modbus-serial": "^4.5.1",
+    "serialport": "^4.0.7",
+    "toml": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
