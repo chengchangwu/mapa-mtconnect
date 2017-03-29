@@ -1,0 +1,29 @@
+# modbus config
+[slave_1]
+name = "resistance"
+id = 11
+index = "0x1000"
+
+[slave_2]
+name = "electronic"
+id = 21
+index = "0x1000"
+
+[slave_3]
+name = "room"
+id = 31
+index = "0x1000"
+
+[slave_4]
+name = "lidqui"
+index = "0x1000"
+
+[slave_5]
+name = "e-master"
+id = 51
+index = [3019, 2999, 3053]
+
+[slave_6]
+name = "resistance"
+id = 12
+index = "0x1000"
