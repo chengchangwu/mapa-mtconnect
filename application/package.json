@@ -1,11 +1,9 @@
 {
-  "name": "get_id",
+  "name": "get_mtc",
   "version": "1.0.0",
   "description": "",
-  "main": "get_id.js",
-  "dependencies": {
-    "xml2js": "^0.4.17"
-  },
+  "main": "get_mtc.js",
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
